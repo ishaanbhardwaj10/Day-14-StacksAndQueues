@@ -49,7 +49,19 @@ namespace StacksAndQueues
             }
         }
 
+        internal void Dequeue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Queue is empty");
+            }
+            else
+            {
+                Console.WriteLine("The Dequeued element is : " + head.data);
+                head = head.next;
 
+            }
+        }
 
     }
 }
