@@ -8,6 +8,7 @@
             Console.WriteLine("Welcome to Stacks and Queues Problem");
             Console.WriteLine("Use case #1: Create a Stack");
             Console.WriteLine("Use case #2: Peek and Pop from Stack till its empty");
+            Console.WriteLine("Use case #3: Create a Queue");
 
             Console.Write("Please select a program to run from options above: ");
             int choice = Convert.ToInt32(Console.ReadLine());
@@ -35,6 +36,13 @@
                     Console.WriteLine("-----------Stack after empty operation-----------");
                     stackOne.Display();
                     Console.WriteLine("-------------------------------------------------");
+                    break;
+                case 3:
+                    Queue queueOne = new Queue();
+                    queueOne.Enqueue(56);
+                    queueOne.Enqueue(30);
+                    queueOne.Enqueue(70);
+                    queueOne.Display();
                     break;
                 default:
                     Console.WriteLine("Please enter a valid number from given options");
